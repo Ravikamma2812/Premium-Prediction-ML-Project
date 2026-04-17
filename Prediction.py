@@ -1,8 +1,8 @@
 from joblib import load
 import pandas as pd
 import sklearn
-model_regression = load("C://Users//ravit//Downloads//ML Projects//Regression//app//Artifacts//Regression_model.joblib")
-model_scaler = load("C://Users//ravit//Downloads//ML Projects//Regression//app//Artifacts//scaler_with_col.joblib")
+model_regression = load("Artifacts/Regression_model.joblib")
+model_scaler = load("Artifacts/scaler_with_col.joblib")
 scaler=model_scaler['scaler']
 cols_to_scale=model_scaler['cols_to_scale']
 def calculate_normalized_risk(medical_history):
